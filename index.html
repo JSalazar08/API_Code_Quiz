@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div class="first-page">
+        <div class="row header">
+            <div class="HighScore">
+                <h5 id="score">View High Score</h5>
+            </div>
+            <div class="Timer">
+                <h5 id="time">Time: 0 </h5>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class=" row ">
+                <div class="Quiz">
+                    <h2>Coding Quiz Challenge</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="Outcome">
+                    <p>Try to answer the following code-related questions within the time limit.</p>
+                    <button id="start" class="btn btn-primary">Start Quiz</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="divContainer">
+            <h3 id="title"></h3>
+            <ol id="q-list"></ol>
+        </div>
+        
+        <br>
+        <div id="answer"> </div>
+        <div class="finish-section">
+            <h3>All Done!</h3>
+            <p id="result"></p>
+            <p id="errorMessage"></p>
+            <form class="form-inline">
+                <div class="form-group 2">
+                    <h5 id="staticEmail2">Enter initials </h5>
+                </div>
+                <div class="form-group 2">
+                    <input type="text" class="form-control" id="inputInitial" placeholder="Enter your initials"> </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="final-page">
+            <h2>HighScores</h2>
+
+            <div class="HighScore">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="1.">
+
+            </div>
+            <button class="myBtn" onclick="init()">Go Back</button>
+            <button class="myBtn" onclick="clearScore()">Clear highScores</button>
+         </div>
+         <script src="/assets/js/script.js"></script>
+</body>
+</html>
